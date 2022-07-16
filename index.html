@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="characters">
+            <p class="title">Characters</p>
+            <input type="text" class="box-shadow-red" id="filterInput1" placeholder="Search..." />
+            <button id="searchButtonCharacters" class="btn box-shadow-red">SEARCH</button>
+            <div id="searchCharactersDiv" class="search-names-div"></div>
+        </div>
+
+        <div class="houses">
+            <p class="title">Houses</p>
+            <input type="text" class="box-shadow-red" id="filterInput2" placeholder="Search..." />
+            <button id="searchButtonHouses" class="btn box-shadow-red">SEARCH</button>
+            <div id="searchHousesDiv" class="search-names-div"></div>
+        </div>
+
+        <div onClick="messageHidden(event)" id="message-1" class="hidden">
+            <div id="dataDiv1" class="box-shadow-red">
+                <h2 id="personName"></h2>
+                <p id="house"></p>
+                <p id="gender"></p>
+                <p id="dateBirth"></p>
+                <p id="actor"></p>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+
+        <div onClick="messageHidden(event)" id="message-2" class="hidden">
+            <div id="dataDiv2" class="box-shadow-red">
+                <a href="#">Here also studies</a>
+                <div id="filteredStudiesName"></div>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>

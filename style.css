@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(126, 126, 126);
+    position: relative;
+}
+
+.characters, .houses {
+    width: 40%;
+    height: 75vh;
+    background: rgb(40, 37, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+
+.characters input, .houses input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    margin: 10px 0;
+}
+input::placeholder {
+    color: aliceblue;
+}
+
+.btn {
+    width: 35%;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.box-shadow-red {
+    box-shadow: 0 0 15px rgb(255, 43, 43);
+}
+
+.search-names-div {
+    width: 90%;
+    text-align: center;
+    letter-spacing: normal;
+    font-size: 20px;
+    font-style: italic;
+    overflow: auto;
+}
+.search-names-div p {
+    margin: 4px 0;
+}
+.search-names-div::-webkit-scrollbar {
+    width: 10px;
+}
+.search-names-div::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(126, 126, 126);
+}
+.search-names-div::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background-color: rgb(28, 28, 28)
+}
+
+#message-1, #message-2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dataDiv1 {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.953);
+    padding: 15px;
+    border-radius: 8px;
+    color: aliceblue;
+    position: relative;
+}
+#dataDiv1 h2 {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+#dataDiv1 p {
+    font-size: 20px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#dataDiv2 {
+    width: 20%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.953);
+    color: aliceblue;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+#dataDiv2 a {
+    color: aliceblue;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#filteredStudiesName {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    overflow: auto;
+}
+#filteredStudiesName p {
+    font-size: 20px;
+    margin: 3px 0;
+    font-style: italic;
+}
+#filteredStudiesName::-webkit-scrollbar {
+    width: 7px;
+}
+#filteredStudiesName::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(126, 126, 126);
+}
+
+div.hidden {
+    visibility: hidden;
+}
+div.visible {
+    visibility: visible;
+}
